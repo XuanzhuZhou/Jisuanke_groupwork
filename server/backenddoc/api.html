@@ -1,0 +1,1702 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>api package &mdash; group1 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> group1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">api package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-api.alibaba">api.alibaba module</a></li>
+<li><a class="reference internal" href="#module-api.apps">api.apps module</a></li>
+<li><a class="reference internal" href="#module-api.models">api.models module</a></li>
+<li><a class="reference internal" href="#module-api.tests">api.tests module</a></li>
+<li><a class="reference internal" href="#module-api.urls">api.urls module</a></li>
+<li><a class="reference internal" href="#module-api.views">api.views module</a></li>
+<li><a class="reference internal" href="#module-api">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">group1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>api package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-package">
+<h1>api package<a class="headerlink" href="#api-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-api.alibaba">
+<span id="api-alibaba-module"></span><h2>api.alibaba module<a class="headerlink" href="#module-api.alibaba" title="永久链接至标题">¶</a></h2>
+<p>本模块用于处理和支付宝相关的</p>
+<dl class="function">
+<dt id="api.alibaba.check_notify">
+<code class="descclassname">api.alibaba.</code><code class="descname">check_notify</code><span class="sig-paren">(</span><em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#api.alibaba.check_notify" title="永久链接至目标">¶</a></dt>
+<dd><p>对从支付宝获取的 notify 信息进行处理，判断订单状态</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">支付宝发送的包含签名类型、签名等信息的字典参数</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">bool 值</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.alibaba.pay_result">
+<code class="descclassname">api.alibaba.</code><code class="descname">pay_result</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.alibaba.pay_result" title="永久链接至目标">¶</a></dt>
+<dd><p>处理支付宝结果通知</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">前端传入参数:</th><td class="field-body">支付宝发送的订单信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">代表是否成功的 http 相应</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.alibaba.product_trade_no">
+<code class="descclassname">api.alibaba.</code><code class="descname">product_trade_no</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.alibaba.product_trade_no" title="永久链接至目标">¶</a></dt>
+<dd><p>根据当前时间生成订单号</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回信息:</th><td class="field-body">根据当前时间和随机数生成的订单号</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.alibaba.response_page_pay">
+<code class="descclassname">api.alibaba.</code><code class="descname">response_page_pay</code><span class="sig-paren">(</span><em>trade_no: str</em>, <em>price</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#api.alibaba.response_page_pay" title="永久链接至目标">¶</a></dt>
+<dd><p>处理电脑页面的支付请求，返回跳转到支付宝的页面地址</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">trade_no: 字符串格式的订单号 price: 价格</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">字符串格式的支付地址</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.alibaba.response_refund">
+<code class="descclassname">api.alibaba.</code><code class="descname">response_refund</code><span class="sig-paren">(</span><em>trade_no: str</em>, <em>amount: float</em><span class="sig-paren">)</span><a class="headerlink" href="#api.alibaba.response_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>接入支付宝处理退款</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">trade_no: 字符串格式的订单号 amount: 价格</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">退款信息</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.alibaba.response_wap_page_pay">
+<code class="descclassname">api.alibaba.</code><code class="descname">response_wap_page_pay</code><span class="sig-paren">(</span><em>trade_no: str</em>, <em>price</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#api.alibaba.response_wap_page_pay" title="永久链接至目标">¶</a></dt>
+<dd><p>处理手机页面的支付请求，返回拉起支付宝 App 的地址</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">trade_no: 字符串格式的订单号 price: 价格</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">字符串格式的支付地址</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.alibaba.solve_trade">
+<code class="descclassname">api.alibaba.</code><code class="descname">solve_trade</code><span class="sig-paren">(</span><em>trade_type</em>, <em>*</em>, <em>trade_no='-1'</em>, <em>amount=-1</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#api.alibaba.solve_trade" title="永久链接至目标">¶</a></dt>
+<dd><p>处理与支付宝支付有关的入口</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">trade_type: 交易类型, 含义请参考 statuscode.py 文件
+trade_no: 订单号, 可以为空
+amount: 订单价格, 可以为空</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">可能需要的支付地址</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-api.apps">
+<span id="api-apps-module"></span><h2>api.apps module<a class="headerlink" href="#module-api.apps" title="永久链接至标题">¶</a></h2>
+<p>app文件</p>
+<dl class="class">
+<dt id="api.apps.ApiConfig">
+<em class="property">class </em><code class="descclassname">api.apps.</code><code class="descname">ApiConfig</code><span class="sig-paren">(</span><em>app_name</em>, <em>app_module</em><span class="sig-paren">)</span><a class="headerlink" href="#api.apps.ApiConfig" title="永久链接至目标">¶</a></dt>
+<dd><p>app配置</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-api.models">
+<span id="api-models-module"></span><h2>api.models module<a class="headerlink" href="#module-api.models" title="永久链接至标题">¶</a></h2>
+<p>本文件用于编写数据库表</p>
+<dl class="class">
+<dt id="api.models.VerifyCode">
+<em class="property">class </em><code class="descclassname">api.models.</code><code class="descname">VerifyCode</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#api.models.VerifyCode" title="永久链接至目标">¶</a></dt>
+<dd><p>短信验证码</p>
+<dl class="exception">
+<dt id="api.models.VerifyCode.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#api.models.VerifyCode.DoesNotExist" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="api.models.VerifyCode.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#api.models.VerifyCode.MultipleObjectsReturned" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="api.models.check_mobile">
+<code class="descclassname">api.models.</code><code class="descname">check_mobile</code><span class="sig-paren">(</span><em>agent</em><span class="sig-paren">)</span><a class="headerlink" href="#api.models.check_mobile" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来检查请求来源</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入数据:</th><td class="field-body">request.header['User-Agent']</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回数据:</th><td class="field-body">true（手机端） 或 false（PC端）</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.models.send_message">
+<code class="descclassname">api.models.</code><code class="descname">send_message</code><span class="sig-paren">(</span><em>tel: str</em><span class="sig-paren">)</span><a class="headerlink" href="#api.models.send_message" title="永久链接至目标">¶</a></dt>
+<dd><p>发送短信验证码</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body">字符串类型的电话号码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">状态码</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.models.verification_code">
+<code class="descclassname">api.models.</code><code class="descname">verification_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#api.models.verification_code" title="永久链接至目标">¶</a></dt>
+<dd><p>生成四位验证码</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">四位随机数验证码</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-api.tests">
+<span id="api-tests-module"></span><h2>api.tests module<a class="headerlink" href="#module-api.tests" title="永久链接至标题">¶</a></h2>
+<p>本文件用于测试</p>
+<dl class="class">
+<dt id="api.tests.BackendloginoutTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">BackendloginoutTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.BackendloginoutTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试后台人员登录和退出登录功能</p>
+<dl class="method">
+<dt id="api.tests.BackendloginoutTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.BackendloginoutTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.BackendloginoutTestCase.test_login_error_0_password">
+<code class="descname">test_login_error_0_password</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.BackendloginoutTestCase.test_login_error_0_password" title="永久链接至目标">¶</a></dt>
+<dd><p>登录密码错误的测试</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.BackendloginoutTestCase.test_login_error_0_username">
+<code class="descname">test_login_error_0_username</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.BackendloginoutTestCase.test_login_error_0_username" title="永久链接至目标">¶</a></dt>
+<dd><p>登录用户名错误的测试</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.BackendloginoutTestCase.test_login_error_1">
+<code class="descname">test_login_error_1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.BackendloginoutTestCase.test_login_error_1" title="永久链接至目标">¶</a></dt>
+<dd><p>登录身份信息错误的测试</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.BackendloginoutTestCase.test_logout_success">
+<code class="descname">test_logout_success</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.BackendloginoutTestCase.test_logout_success" title="永久链接至目标">¶</a></dt>
+<dd><p>已登录的情况下退出登录</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.CcCheckRefund">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">CcCheckRefund</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcCheckRefund" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试课程顾问查看退款情况及处理退款</p>
+<dl class="method">
+<dt id="api.tests.CcCheckRefund.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcCheckRefund.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcCheckRefund.test_check_false_refund">
+<code class="descname">test_check_false_refund</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcCheckRefund.test_check_false_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>测试查看没有处理的退费记录</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcCheckRefund.test_check_true_refund">
+<code class="descname">test_check_true_refund</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcCheckRefund.test_check_true_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>测试查看近30天已处理的退费记录</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcCheckRefund.test_ensure_refund">
+<code class="descname">test_ensure_refund</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcCheckRefund.test_ensure_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>测试处理退款</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.CcSignupInfo">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">CcSignupInfo</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcSignupInfo" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试课程顾问填写报名信息</p>
+<dl class="method">
+<dt id="api.tests.CcSignupInfo.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcSignupInfo.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcSignupInfo.test_error1_info">
+<code class="descname">test_error1_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcSignupInfo.test_error1_info" title="永久链接至目标">¶</a></dt>
+<dd><p>测试用户不存在的情况</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcSignupInfo.test_error2_info">
+<code class="descname">test_error2_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcSignupInfo.test_error2_info" title="永久链接至目标">¶</a></dt>
+<dd><p>测试孩子信息不匹配的情况</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcSignupInfo.test_error3_info">
+<code class="descname">test_error3_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcSignupInfo.test_error3_info" title="永久链接至目标">¶</a></dt>
+<dd><p>测试老客户信息不存在的情况</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcSignupInfo.test_success_info">
+<code class="descname">test_success_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcSignupInfo.test_success_info" title="永久链接至目标">¶</a></dt>
+<dd><p>测试输入信息正确无误</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.CcTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">CcTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试查看课程顾问业绩功能</p>
+<dl class="method">
+<dt id="api.tests.CcTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来初始化</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcTestCase.test_view_ccrecord_success">
+<code class="descname">test_view_ccrecord_success</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcTestCase.test_view_ccrecord_success" title="永久链接至目标">¶</a></dt>
+<dd><p>测试cc查看业绩成功情况</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcTestCase.test_view_ccrecord_wrong">
+<code class="descname">test_view_ccrecord_wrong</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcTestCase.test_view_ccrecord_wrong" title="永久链接至目标">¶</a></dt>
+<dd><p>测试cc查看业绩时间段错误情况</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CcTestCase.test_view_customers">
+<code class="descname">test_view_customers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CcTestCase.test_view_customers" title="永久链接至目标">¶</a></dt>
+<dd><p>测试cc查看家长</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.ChangePasswordTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">ChangePasswordTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.ChangePasswordTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>测试修改密码的类</p>
+<dl class="method">
+<dt id="api.tests.ChangePasswordTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.ChangePasswordTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.ChangePasswordTestCase.test_correct">
+<code class="descname">test_correct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.ChangePasswordTestCase.test_correct" title="永久链接至目标">¶</a></dt>
+<dd><p>测试原密码正确</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.ChangePasswordTestCase.test_error">
+<code class="descname">test_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.ChangePasswordTestCase.test_error" title="永久链接至目标">¶</a></dt>
+<dd><p>测试原密码错误</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.CheckMobileTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">CheckMobileTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CheckMobileTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试检查请求来源功能</p>
+<dl class="method">
+<dt id="api.tests.CheckMobileTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CheckMobileTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来初始化</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CheckMobileTestCase.test_check_mobile">
+<code class="descname">test_check_mobile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CheckMobileTestCase.test_check_mobile" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试来源为Pixel 2 手机端时的Check</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.CheckMobileTestCase.test_check_pc">
+<code class="descname">test_check_pc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.CheckMobileTestCase.test_check_pc" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试来源为PC端时的Check</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.GetSellRecordsTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">GetSellRecordsTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.GetSellRecordsTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试返回地推人员销售信息</p>
+<dl class="method">
+<dt id="api.tests.GetSellRecordsTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.GetSellRecordsTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.GetSellRecordsTestCase.test_get_records">
+<code class="descname">test_get_records</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.GetSellRecordsTestCase.test_get_records" title="永久链接至目标">¶</a></dt>
+<dd><p>本方法用于检测获取销售记录</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.RegisterPayTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">RegisterPayTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.RegisterPayTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>测试注册时发送支付请求</p>
+<dl class="method">
+<dt id="api.tests.RegisterPayTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.RegisterPayTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.RegisterPayTestCase.test_miss_value">
+<code class="descname">test_miss_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.RegisterPayTestCase.test_miss_value" title="永久链接至目标">¶</a></dt>
+<dd><p>测试前端数据异常</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.RegisterPayTestCase.test_not_found_customer">
+<code class="descname">test_not_found_customer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.RegisterPayTestCase.test_not_found_customer" title="永久链接至目标">¶</a></dt>
+<dd><p>测试没有顾客</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.RegisterPayTestCase.test_not_found_seller">
+<code class="descname">test_not_found_seller</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.RegisterPayTestCase.test_not_found_seller" title="永久链接至目标">¶</a></dt>
+<dd><p>测试没有地推人员</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.SuperuserImportTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">SuperuserImportTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserImportTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于超级管理员导入数据功能</p>
+<dl class="method">
+<dt id="api.tests.SuperuserImportTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserImportTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来初始化</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserImportTestCase.test_check_import_frontend_error">
+<code class="descname">test_check_import_frontend_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserImportTestCase.test_check_import_frontend_error" title="永久链接至目标">¶</a></dt>
+<dd><p>测试前端数据错误时</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.SuperuserModifyTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">SuperuserModifyTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于超级管理员查看和修改用户数据功能</p>
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来初始化</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_check_import">
+<code class="descname">test_check_import</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_check_import" title="永久链接至目标">¶</a></dt>
+<dd><p>测试超级管理员身份不符合时</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_delete_customer_empty">
+<code class="descname">test_delete_customer_empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_delete_customer_empty" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试管理员删除客户数据不全时</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_delete_customer_success">
+<code class="descname">test_delete_customer_success</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_delete_customer_success" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试管理员删除客户户成功功能</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_delete_user_empty">
+<code class="descname">test_delete_user_empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_delete_user_empty" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试管理员删除用户数据不全时</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_delete_user_success">
+<code class="descname">test_delete_user_success</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_delete_user_success" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试管理员删除用户成功功能</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_modify_customer_info">
+<code class="descname">test_modify_customer_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_modify_customer_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试修改客户信息</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_modify_user_info">
+<code class="descname">test_modify_user_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_modify_user_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试改用户信息</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_view_customers">
+<code class="descname">test_view_customers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_view_customers" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试查看客户信息</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserModifyTestCase.test_view_users">
+<code class="descname">test_view_users</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserModifyTestCase.test_view_users" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试查看用户信息</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.SuperuserRegisterTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">SuperuserRegisterTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserRegisterTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于超级管理员注册员工</p>
+<dl class="method">
+<dt id="api.tests.SuperuserRegisterTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserRegisterTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserRegisterTestCase.test_error_register">
+<code class="descname">test_error_register</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserRegisterTestCase.test_error_register" title="永久链接至目标">¶</a></dt>
+<dd><p>测试用户名重复</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.SuperuserRegisterTestCase.test_success_regist">
+<code class="descname">test_success_regist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.SuperuserRegisterTestCase.test_success_regist" title="永久链接至目标">¶</a></dt>
+<dd><p>测试用户名没有重复</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="api.tests.VerifyCodeTestCase">
+<em class="property">class </em><code class="descclassname">api.tests.</code><code class="descname">VerifyCodeTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.VerifyCodeTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>测试发送验证码的类</p>
+<dl class="method">
+<dt id="api.tests.VerifyCodeTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.VerifyCodeTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.VerifyCodeTestCase.test_send_short_tel">
+<code class="descname">test_send_short_tel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.VerifyCodeTestCase.test_send_short_tel" title="永久链接至目标">¶</a></dt>
+<dd><p>测试电话号码过短</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.VerifyCodeTestCase.test_send_tel">
+<code class="descname">test_send_tel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.VerifyCodeTestCase.test_send_tel" title="永久链接至目标">¶</a></dt>
+<dd><p>测试测试电话号码过短</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api.tests.VerifyCodeTestCase.test_send_tel_with_letter">
+<code class="descname">test_send_tel_with_letter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.tests.VerifyCodeTestCase.test_send_tel_with_letter" title="永久链接至目标">¶</a></dt>
+<dd><p>测试电话号码中有字母</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-api.urls">
+<span id="api-urls-module"></span><h2>api.urls module<a class="headerlink" href="#module-api.urls" title="永久链接至标题">¶</a></h2>
+<p>本文件用于配置url</p>
+</div>
+<div class="section" id="module-api.views">
+<span id="api-views-module"></span><h2>api.views module<a class="headerlink" href="#module-api.views" title="永久链接至标题">¶</a></h2>
+<p>本文件用于实现 api 接口</p>
+<dl class="function">
+<dt id="api.views.add_info_records">
+<code class="descclassname">api.views.</code><code class="descname">add_info_records</code><span class="sig-paren">(</span><em>records</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.add_info_records" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于补充额外的退费申请信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">records(退费申请集合)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">退费申请的详细信息</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body">列表</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.cc_check_refund">
+<code class="descclassname">api.views.</code><code class="descname">cc_check_refund</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.cc_check_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于课程顾问查看退款信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/cc_check_refund</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data = {'username': 'consultant_name',</td>
+</tr>
+</tbody>
+</table>
+<p>'refund': True(查看已退款的信息)}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">已退款的信息记录</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'list': [{'id': 2, 'course_id': 2, 'is_paid': False,</td>
+</tr>
+</tbody>
+</table>
+<p>'reason': 'the time does not fit', 'phone': '15900001234',</p>
+<p>'stu_name': 'child1', 'date': '2018-08-07', 'coursename': 'course2',</p>
+<p>'total_sec': 48, 'payment': 6696.0, 'cncl_num': 19}]}</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.cc_ensure_refund">
+<code class="descclassname">api.views.</code><code class="descname">cc_ensure_refund</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.cc_ensure_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于课程顾问同意并填写退款金额</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/cc_ensure_refund</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data = {'id': 8(退款记录的id), 'refund': '2500'(退款金额)}</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0(操作成功) 1(退款记录不存在)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.cc_signup_info">
+<code class="descclassname">api.views.</code><code class="descname">cc_signup_info</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.cc_signup_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于课程顾问填写报名信息进行正式课报名</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/cc_signup_info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data = {'tel': '17750126548', 'child_name': 'child',</td>
+</tr>
+</tbody>
+</table>
+<p>'parent_name': 'parent', 'classin_id': '123456', 'classin_name': 'name',</p>
+<p>'birthday': '2011-11-11', 'old_user': '13801231111', 'money': '2999.9',</p>
+<p>'day1': '星期五', 'time1': '08:00:00', 'day2': '星期六',</p>
+<p>'time2': '10:00:00', 'day3': '星期日', 'time3': '14:00:00'(顾客意愿时间),</p>
+<p>'demand': '少儿班'(顾客需求)}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0(操作成功) 902(用户信息不存在) 907(学生信息不存在)</td>
+</tr>
+</tbody>
+</table>
+<p>805(有待支付的课程) 908(老客户不存在)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.cc_view_customers">
+<code class="descclassname">api.views.</code><code class="descname">cc_view_customers</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.cc_view_customers" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于处理课程顾问查看用户的请求</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body"><p class="first">api/cc_view_customers</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body"><p class="first">无,需登陆</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回数据:</th><td class="field-body"><p class="first">msg: 0或901 list: 用户数据列表</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例:</th><td class="field-body"><p class="first">{'list': [{'id': 1, tel': '12345678910', 'child_name':</p>
+<p>'child2', 'parent_name': None, 'audition_count': 2,</p>
+<p>'is_signedup': True}, {'id': 2, 'tel': '12345678911',</p>
+<p>'child_name': 'child1', 'parent_name': None,</p>
+<p>'audition_count': 1, 'is_signedup': True},</p>
+<p>{'id': 1, 'tel': '12345678912', 'child_name': 'child0',</p>
+<p>'parent_name': None, 'audition_count': 0,</p>
+<p class="last">'is_signedup': False}], 'msg': 0}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.change_password">
+<code class="descclassname">api.views.</code><code class="descname">change_password</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.change_password" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于修改密码</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/change_password</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传送数据:</th><td class="field-body">data = {'username': 'username', 'old_psw': 'old_psw',</td>
+</tr>
+</tbody>
+</table>
+<p>'new_psw': 'new_psw'}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0(成功更改密码) 709(原密码错误)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.check_data_of_eduamdin">
+<code class="descclassname">api.views.</code><code class="descname">check_data_of_eduamdin</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.check_data_of_eduamdin" title="永久链接至目标">¶</a></dt>
+<dd><p>获取教务页面传来的信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">从前端传回来的 json 请求进行解码后的字典</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回数据:</th><td class="field-body">如果参数不全, 返回装有&quot;前端数据异常&quot;的 JsonResponse 响应, 否则为 None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.check_front_key_exists">
+<code class="descclassname">api.views.</code><code class="descname">check_front_key_exists</code><span class="sig-paren">(</span><em>data: dict</em>, <em>require_keys: tuple</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#api.views.check_front_key_exists" title="永久链接至目标">¶</a></dt>
+<dd><p>检查前端数据是否异常</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body">data 为从前端 json 数据中提取出的数据, require_key 为需要保证存在的键的集合</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回数据:</th><td class="field-body">bool 如果需要的键全部存在返回 True, 否则返回 False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.check_login">
+<code class="descclassname">api.views.</code><code class="descname">check_login</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.check_login" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于实现登录检查和页面跳转检查</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/check_login</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}或{'error': 1}</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">状态码解释:</th><td class="field-body">0 已登录且身份符合 1未登录或者身份不匹配</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.class_paid">
+<code class="descclassname">api.views.</code><code class="descname">class_paid</code><span class="sig-paren">(</span><em>trade_no</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.class_paid" title="永久链接至目标">¶</a></dt>
+<dd><p>处理正式课程报名之后支付宝的回调信息, 如果用户支付, 则修改 CcRecord 中的状态</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body">trade_no: 订单号</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">HttpResponse</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.class_pay">
+<code class="descclassname">api.views.</code><code class="descname">class_pay</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.class_pay" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于处理正式课的支付请求，返回支付的url</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body">request: HttpRequest</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">JsonResponse 如果程序顺利执行，返回中带有跳转至支付宝所需要的 url,
+否则会带有错误码(参考 statuscode STATUS_CODE)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.course_by_student">
+<code class="descclassname">api.views.</code><code class="descname">course_by_student</code><span class="sig-paren">(</span><em>tel: str</em>, <em>childname: str</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.course_by_student" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于返回该学生的课程信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">接收参数:</th><td class="field-body">tel(string)电话号码 childname(string)学生姓名</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">该学生的课程信息或0(用户不存在)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.course_by_teacher">
+<code class="descclassname">api.views.</code><code class="descname">course_by_teacher</code><span class="sig-paren">(</span><em>teacher_name: str</em>, <em>be_courses</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.course_by_teacher" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于返回该老师所教的课程信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">接收参数:</th><td class="field-body">teacher_name(string)老师姓名 be_courses(课程对象集合)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">该老师的课程信息或0(无符合条件的结果)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.deal_register_pay">
+<code class="descclassname">api.views.</code><code class="descname">deal_register_pay</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.deal_register_pay" title="永久链接至目标">¶</a></dt>
+<dd><p>处理注册时的支付请求</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">HttpRequest 请求</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回参数:</th><td class="field-body">支付宝的支付地址</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.deal_with_courses">
+<code class="descclassname">api.views.</code><code class="descname">deal_with_courses</code><span class="sig-paren">(</span><em>courses</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.deal_with_courses" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于补充额外的课程信息: 老师姓名, 学生人数, 目前课节</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">接收参数:</th><td class="field-body">courses(课程对象集合)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">该老师的课程信息或0(无符合条件的结果)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.eduadmin_arrange_course">
+<code class="descclassname">api.views.</code><code class="descname">eduadmin_arrange_course</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.eduadmin_arrange_course" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于教务老师给学生安排课程</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/change_section_info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data = {'id': 1(课程id), 'tel': '15912340711'(家长电话号码),</td>
+</tr>
+</tbody>
+</table>
+<p>'child_name': 'childname'}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0(操作成功) 1(传入信息不正确)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.eduadmin_cancell_courses">
+<code class="descclassname">api.views.</code><code class="descname">eduadmin_cancell_courses</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.eduadmin_cancell_courses" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于教务老师查看近一周已销课情况和所有未销课情况</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/eduadmin_cancell_courses</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">销课信息数量和相应的具体信息</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例:</th><td class="field-body">{'count': 2, 'list': [{'id': 6, 'course_id_id': 2, 'count': 2,</td>
+</tr>
+</tbody>
+</table>
+<p>'name': 'course1(2)', 'date': '2018-08-06', 'start_time': '08:00:00',</p>
+<p>'end_time': '10:00:00', 'location': '5A', 'is_cancel': False},</p>
+<p>{'id': 8, 'course_id_id': 2, 'count': 4, 'name': 'course1(4)',</p>
+<p>'date': '2018-08-20', 'start_time': '08:00:00', 'end_time': '10:00:00',</p>
+<p>'location': '5A', 'is_cancel': False}]}</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.eduadmin_check_refund">
+<code class="descclassname">api.views.</code><code class="descname">eduadmin_check_refund</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.eduadmin_check_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>教务老师查看退款信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">eduadmin_check_refund</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data: {'course_message': '围棋'(课程搜索关键字)}</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">退款记录、顾客信息、课程信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.eduadmin_ensure_cancell">
+<code class="descclassname">api.views.</code><code class="descname">eduadmin_ensure_cancell</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.eduadmin_ensure_cancell" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于教务老师确认销课</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/eduadmin_ensure_cancell</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data = {'id': 1(课节id)}</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">是否成功的标识</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例(成功):</th><td class="field-body">{'seccess': True}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.eduadmin_ensure_refund">
+<code class="descclassname">api.views.</code><code class="descname">eduadmin_ensure_refund</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.eduadmin_ensure_refund" title="永久链接至目标">¶</a></dt>
+<dd><p>教务老师最终确认退课，退款进入用户账户</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/eduadmin_ensure_refund</td>
+</tr>
+<tr class="field-even field"><th class="field-name">传入参数:</th><td class="field-body">顾客 id、课程 id</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例:</th><td class="field-body">{'msg': 0} 状态码含义具体请参考 statuscode.py 文件</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.eduadmin_get_courses">
+<code class="descclassname">api.views.</code><code class="descname">eduadmin_get_courses</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.eduadmin_get_courses" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于教务老师按条件搜索获得相应课程信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/eduadmin_get_courses</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data = {'tel': '15912340711', 'childname': 'name',</td>
+</tr>
+</tbody>
+</table>
+<p>'teacher': 'teacher_name', 'day': '1', 'time': '08:00'}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码和课程信息列表</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0, 'list': [{'id': 1, 'name': 'course1',</td>
+</tr>
+</tbody>
+</table>
+<p>'teacher_id_id': 1, 'time': '08:00:00', 'date': 1, 'time_length': 120,</p>
+<p>'total_sec': 48, 'price': None, 'teacher': 'teacher1', 'num': 2,</p>
+<p>'cur_sec': 4}]}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">状态码解释:</th><td class="field-body">0(操作成功) 1(没有符合条件的搜索结果)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_alipay_notify">
+<code class="descclassname">api.views.</code><code class="descname">get_alipay_notify</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span> &#x2192; django.http.response.HttpResponse<a class="headerlink" href="#api.views.get_alipay_notify" title="永久链接至目标">¶</a></dt>
+<dd><p>接收处理支付宝的回调信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body">HttpRequest</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">HttpResposne</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_cancel_num">
+<code class="descclassname">api.views.</code><code class="descname">get_cancel_num</code><span class="sig-paren">(</span><em>course</em>, <em>date_this</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.get_cancel_num" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于获得该课的相应日期内的销课次数</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">course(课程实例对象) date(date()实例对象)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">销课次数</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_ccrecord">
+<code class="descclassname">api.views.</code><code class="descname">get_ccrecord</code><span class="sig-paren">(</span><em>data: dict</em><span class="sig-paren">)</span> &#x2192; django.http.request.QueryDict<a class="headerlink" href="#api.views.get_ccrecord" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于从前端 json 数据中提取 id 和 price, 找到对应的 ccrecord 记录, 并进行验证</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">data 字典类型, 调用本函数前应先检查字典中的键是否全部存在</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回数据:</th><td class="field-body">QueryDict CcRecord 的查询结果，未查到返回 None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_ccrecords">
+<code class="descclassname">api.views.</code><code class="descname">get_ccrecords</code><span class="sig-paren">(</span><em>username</em>, <em>date_from</em>, <em>date_to</em><span class="sig-paren">)</span> &#x2192; tuple<a class="headerlink" href="#api.views.get_ccrecords" title="永久链接至目标">¶</a></dt>
+<dd><p>根据时间返回课程顾问业绩</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_customer">
+<code class="descclassname">api.views.</code><code class="descname">get_customer</code><span class="sig-paren">(</span><em>customer_id</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.get_customer" title="永久链接至目标">¶</a></dt>
+<dd><p>获得家长类的一行</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_customer_and_seller">
+<code class="descclassname">api.views.</code><code class="descname">get_customer_and_seller</code><span class="sig-paren">(</span><em>data: dict</em><span class="sig-paren">)</span> &#x2192; tuple<a class="headerlink" href="#api.views.get_customer_and_seller" title="永久链接至目标">¶</a></dt>
+<dd><p>根据data中的 tel、child_name、seller_id 获取 cuatomer 和 seller</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">从前端 json 信息中提取出的字典类型，调用本函数前应检查参数是否齐全</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回信息:</th><td class="field-body">customer 和 seller，如果没找到则返回 (None, None)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_pay_type">
+<code class="descclassname">api.views.</code><code class="descname">get_pay_type</code><span class="sig-paren">(</span><em>agent</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#api.views.get_pay_type" title="永久链接至目标">¶</a></dt>
+<dd><p>根据请求来源判断支付类型</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">浏览器发出的用户 agent 信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回信息:</th><td class="field-body">根据传入参数判断得出的支付类型(参考 TRADE_TYPE)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_refund_response">
+<code class="descclassname">api.views.</code><code class="descname">get_refund_response</code><span class="sig-paren">(</span><em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.get_refund_response" title="永久链接至目标">¶</a></dt>
+<dd><p>返回退款状态码</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">退款信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">退款信息状态码</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_sellrecords">
+<code class="descclassname">api.views.</code><code class="descname">get_sellrecords</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.get_sellrecords" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于地推人员本人查看自己业绩</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/get_sellrecords</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据样例:</th><td class="field-body">data = {'username': 'username', 'date0': '2018-08-08',</td>
+</tr>
+</tbody>
+</table>
+<p>'date1': '2018-08-31'}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">今日销售数量、今日销售收入、所选日期销售数量、所选日期销售收入</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'list': [{'today_count': '2', 'today_money': '69.96',</td>
+</tr>
+</tbody>
+</table>
+<p>'history_count': '2', 'history_money': '69.96'}]}</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.get_status_response">
+<code class="descclassname">api.views.</code><code class="descname">get_status_response</code><span class="sig-paren">(</span><em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.get_status_response" title="永久链接至目标">¶</a></dt>
+<dd><p>获取状态码并包装为 JsonResponse 响应</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">传入参数:</th><td class="field-body">状态码搜索的键</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回数据:</th><td class="field-body">包装有状态码的 JsonResponse 响应</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.login">
+<code class="descclassname">api.views.</code><code class="descname">login</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.login" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于实现后台员工登录</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/login</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据(样例):</th><td class="field-body">data = {'type': '3', 'user': 'username',</td>
+</tr>
+</tbody>
+</table>
+<p>'password': 'password'}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例(成功):</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0(允许登录) 902(未找到用户) 901(身份不匹配) 709(密码不正确)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.logout">
+<code class="descclassname">api.views.</code><code class="descname">logout</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.logout" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于退出登录</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/logout</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例(成功):</th><td class="field-body">{'error': 0}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.recieve_message_request">
+<code class="descclassname">api.views.</code><code class="descname">recieve_message_request</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.recieve_message_request" title="永久链接至目标">¶</a></dt>
+<dd><p>处理发送短信请求</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/sendmsg</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传送数据:</th><td class="field-body">data = {'tel': '12345677654'}</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">Json字典</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.register_paid">
+<code class="descclassname">api.views.</code><code class="descname">register_paid</code><span class="sig-paren">(</span><em>trade_no</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.register_paid" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于处理注册之后支付宝的回调信息，如果用户已经支付，则修改用户的状态</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body">trade_no: 订单号</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">HttpResponse</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_delete_customer">
+<code class="descclassname">api.views.</code><code class="descname">superuser_delete_customer</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_delete_customer" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于处理超级管理员删除客户的请求</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/delete_customer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">customer_id</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回数据:</th><td class="field-body">状态码 0或904或901或705</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_delete_user">
+<code class="descclassname">api.views.</code><code class="descname">superuser_delete_user</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_delete_user" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于处理超级管理员删除用户的请求</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/delete_user</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">username</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回数据:</th><td class="field-body">状态码 0或902或901或705</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_import_customer">
+<code class="descclassname">api.views.</code><code class="descname">superuser_import_customer</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_import_customer" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于处理超级管理员导入客户</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">前端发送数据:</th><td class="field-body">FormData 包含文件</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Url:</th><td class="field-body">data/sup_import_customer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回类型:</th><td class="field-body">msg: 状态码 error 错误列表</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回格式:</th><td class="field-body">{'msg': 0, 'error': [{'msg': 705, 'name': '1234567890'}]}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_modify_customer">
+<code class="descclassname">api.views.</code><code class="descname">superuser_modify_customer</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_modify_customer" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于修改家长信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/modify_customer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入信息:</th><td class="field-body">customer_id form(修改信息字典)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">状态码 0或901或902</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_modify_user">
+<code class="descclassname">api.views.</code><code class="descname">superuser_modify_user</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_modify_user" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于修改用户信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/modify_user</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入信息:</th><td class="field-body">username(用户名) form(修改信息字典)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">状态码 0或901</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_register">
+<code class="descclassname">api.views.</code><code class="descname">superuser_register</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_register" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于超级管理员注册员工</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/superuser_register</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">data = {'username': 'eduadmin', 'password': 'eduadmin',</td>
+</tr>
+</tbody>
+</table>
+<p>'user_type': USER_TYPE['eduadmin'], 'gender': 'woman',</p>
+<p>'email': <a class="reference external" href="mailto:'123456789&#37;&#52;&#48;qq&#46;com">'123456789<span>&#64;</span>qq<span>&#46;</span>com</a>'}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0(操作成功) 909(用户已存在)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_view_customers">
+<code class="descclassname">api.views.</code><code class="descname">superuser_view_customers</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_view_customers" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于处理超级管理员查看客户信息的请求</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body"><p class="first">api/sup_view_customers</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body"><p class="first">username</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回数据:</th><td class="field-body"><p class="first">'msg' 状态码 0或901; 'list' :客户信息 字典</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例： [{'id':</th><td class="field-body"><p class="first">5, 'user_id': 7, 'child_name': 'child1',</p>
+<p>'parent_name': None, 'classin_id': None,</p>
+<p>'classin_name': None, 'birthday': None,</p>
+<p>'cc_id': 'consultant', 'audition_count': 0,</p>
+<p>'is_signedup': False, 'is_paid': True,</p>
+<p>'old_user_id': None, 'date_cc': None,</p>
+<p class="last">'demand': None, 'gender': None}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.superuser_view_users">
+<code class="descclassname">api.views.</code><code class="descname">superuser_view_users</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.superuser_view_users" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于处理超级管理员查看用户信息的请求</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">api/sup_view_users</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">username user_type</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回数据:</th><td class="field-body">'msg' 状态码 0或901; 'list'  [dict] 用户信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回字典键值:</th><td class="field-body">id , password, last_login, is_superuser, username,</td>
+</tr>
+</tbody>
+</table>
+<p>first_name, last_name, email, is_staff, is_active, date_joined,</p>
+<p>user_type, gender</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="api.views.view_ccrecords">
+<code class="descclassname">api.views.</code><code class="descname">view_ccrecords</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#api.views.view_ccrecords" title="永久链接至目标">¶</a></dt>
+<dd><p>处理查看课程顾问销售业绩的请求</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-api">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-api" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, group1.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'zh',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

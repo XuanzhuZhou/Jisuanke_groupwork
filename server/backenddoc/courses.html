@@ -1,0 +1,626 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>courses package &mdash; group1 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> group1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">courses package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-courses.apps">courses.apps module</a></li>
+<li><a class="reference internal" href="#module-courses.models">courses.models module</a></li>
+<li><a class="reference internal" href="#module-courses.tests">courses.tests module</a></li>
+<li><a class="reference internal" href="#module-courses.views">courses.views module</a></li>
+<li><a class="reference internal" href="#module-courses">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">group1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>courses package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/courses.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="courses-package">
+<h1>courses package<a class="headerlink" href="#courses-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-courses.apps">
+<span id="courses-apps-module"></span><h2>courses.apps module<a class="headerlink" href="#module-courses.apps" title="永久链接至标题">¶</a></h2>
+<p>本文件用于</p>
+<dl class="class">
+<dt id="courses.apps.CoursesConfig">
+<em class="property">class </em><code class="descclassname">courses.apps.</code><code class="descname">CoursesConfig</code><span class="sig-paren">(</span><em>app_name</em>, <em>app_module</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.apps.CoursesConfig" title="永久链接至目标">¶</a></dt>
+<dd><p>类设置</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-courses.models">
+<span id="courses-models-module"></span><h2>courses.models module<a class="headerlink" href="#module-courses.models" title="永久链接至标题">¶</a></h2>
+<p>本文件用于构建和课程紧密相关的数据库表</p>
+<dl class="class">
+<dt id="courses.models.Courses">
+<em class="property">class </em><code class="descclassname">courses.models.</code><code class="descname">Courses</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.models.Courses" title="永久链接至目标">¶</a></dt>
+<dd><p>该表用来存储课程信息</p>
+<dl class="exception">
+<dt id="courses.models.Courses.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#courses.models.Courses.DoesNotExist" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="courses.models.Courses.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#courses.models.Courses.MultipleObjectsReturned" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.models.Section">
+<em class="property">class </em><code class="descclassname">courses.models.</code><code class="descname">Section</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.models.Section" title="永久链接至目标">¶</a></dt>
+<dd><p>该表用来存储课节</p>
+<dl class="exception">
+<dt id="courses.models.Section.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#courses.models.Section.DoesNotExist" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="courses.models.Section.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#courses.models.Section.MultipleObjectsReturned" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.models.Teacher">
+<em class="property">class </em><code class="descclassname">courses.models.</code><code class="descname">Teacher</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.models.Teacher" title="永久链接至目标">¶</a></dt>
+<dd><p>该表用来存储上课教师的信息</p>
+<dl class="exception">
+<dt id="courses.models.Teacher.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#courses.models.Teacher.DoesNotExist" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="courses.models.Teacher.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#courses.models.Teacher.MultipleObjectsReturned" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.models.get_teacher">
+<code class="descclassname">courses.models.</code><code class="descname">get_teacher</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.models.get_teacher" title="永久链接至目标">¶</a></dt>
+<dd><p>返回一个标记为已删除的 Teacher 行</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-courses.tests">
+<span id="courses-tests-module"></span><h2>courses.tests module<a class="headerlink" href="#module-courses.tests" title="永久链接至标题">¶</a></h2>
+<p>本文件用于测试</p>
+<dl class="class">
+<dt id="courses.tests.AddSectionTestCase">
+<em class="property">class </em><code class="descclassname">courses.tests.</code><code class="descname">AddSectionTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.AddSectionTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试增加课节</p>
+<dl class="method">
+<dt id="courses.tests.AddSectionTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.AddSectionTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="courses.tests.AddSectionTestCase.test_add_section">
+<code class="descname">test_add_section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.AddSectionTestCase.test_add_section" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试增加课节</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.tests.AddtheCourseTestCase">
+<em class="property">class </em><code class="descclassname">courses.tests.</code><code class="descname">AddtheCourseTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.AddtheCourseTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试手动添加课程</p>
+<dl class="method">
+<dt id="courses.tests.AddtheCourseTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.AddtheCourseTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="courses.tests.AddtheCourseTestCase.test_add_course">
+<code class="descname">test_add_course</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.AddtheCourseTestCase.test_add_course" title="永久链接至目标">¶</a></dt>
+<dd><p>测试输入正确的老师姓名的情况</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="courses.tests.AddtheCourseTestCase.test_unadd_course">
+<code class="descname">test_unadd_course</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.AddtheCourseTestCase.test_unadd_course" title="永久链接至目标">¶</a></dt>
+<dd><p>测试输入不存在的老师姓名的情况</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.tests.EduAdminCourseInfoTestCase">
+<em class="property">class </em><code class="descclassname">courses.tests.</code><code class="descname">EduAdminCourseInfoTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.EduAdminCourseInfoTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试教务老师更改课程和课节信息</p>
+<dl class="method">
+<dt id="courses.tests.EduAdminCourseInfoTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.EduAdminCourseInfoTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="courses.tests.EduAdminCourseInfoTestCase.test_change_courseinfo">
+<code class="descname">test_change_courseinfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.EduAdminCourseInfoTestCase.test_change_courseinfo" title="永久链接至目标">¶</a></dt>
+<dd><p>测试更改课程信息</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="courses.tests.EduAdminCourseInfoTestCase.test_change_sectioninfo">
+<code class="descname">test_change_sectioninfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.EduAdminCourseInfoTestCase.test_change_sectioninfo" title="永久链接至目标">¶</a></dt>
+<dd><p>测试更改课节信息</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="courses.tests.EduAdminCourseInfoTestCase.test_view_courseinfo">
+<code class="descname">test_view_courseinfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.EduAdminCourseInfoTestCase.test_view_courseinfo" title="永久链接至目标">¶</a></dt>
+<dd><p>测试查看课程细则</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.tests.InitSectionTestCase">
+<em class="property">class </em><code class="descclassname">courses.tests.</code><code class="descname">InitSectionTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.InitSectionTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试初始化课节信息</p>
+<dl class="method">
+<dt id="courses.tests.InitSectionTestCase.test_init_section">
+<code class="descname">test_init_section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.tests.InitSectionTestCase.test_init_section" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来测试初始化课节函数</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-courses.views">
+<span id="courses-views-module"></span><h2>courses.views module<a class="headerlink" href="#module-courses.views" title="永久链接至标题">¶</a></h2>
+<p>本文件用于实现教务老师更改课程及课节信息的api接口</p>
+<dl class="function">
+<dt id="courses.views.add_new_course">
+<code class="descclassname">courses.views.</code><code class="descname">add_new_course</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.add_new_course" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于教务手动添加新课程</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">course/add_new_course</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据样例:</th><td class="field-body">data = {'teacher_name': 'teachername',</td>
+</tr>
+</tbody>
+</table>
+<p>'name': 'coursename', 'time': '16:00:00','date': 6, 'time_length': 120,</p>
+<p>'total_sec': 48, 'price': 2468.9, 'start_date': '2018-08-29'}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}或{'error': 1}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0 操作成功 1 老师不存在</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.views.add_section">
+<code class="descclassname">courses.views.</code><code class="descname">add_section</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.add_section" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于添加课节</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">course/add_section</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据(全部必填):</th><td class="field-body">id(课程id) count(课节数) section_name(课节名)</td>
+</tr>
+</tbody>
+</table>
+<p>date(该课节上课日期) start_time(该课节开始时间) end_time(该课节结束时间)</p>
+<p>location(上课地点)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}或{'error': 1}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0 操作成功 1 课程未找到</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.views.change_course_info">
+<code class="descclassname">courses.views.</code><code class="descname">change_course_info</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.change_course_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于更改课程信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">course/change_course_info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据(全部必填):</th><td class="field-body">id(课程id) teacher_name(老师名字) time(课程开始时间)</td>
+</tr>
+</tbody>
+</table>
+<p>time_length(课程时长) price(课程价格)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}或{'error': 1}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0 操作成功 1 老师不存在</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.views.change_section_info">
+<code class="descclassname">courses.views.</code><code class="descname">change_section_info</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.change_section_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于更改未销课的课节信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">course/change_section_info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据(全部必填):</th><td class="field-body">section_id(课节id) count(课节数) section_name(课节名)</td>
+</tr>
+</tbody>
+</table>
+<p>date(该课节上课日期) start_time(该课节开始时间) end_time(该课节结束时间)</p>
+<p>location(上课地点)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">状态码解释:</th><td class="field-body">0 操作成功</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.views.edu_courses_info">
+<code class="descclassname">courses.views.</code><code class="descname">edu_courses_info</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.edu_courses_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本api用于查看课程课节及老师细则，方便更改课程信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body">course/edu_courses_info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端传入数据:</th><td class="field-body">{'id': int}</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">课程信息、老师信息、对应课节信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例:</th><td class="field-body">{'course_info': {'name': 'course', 'teacher': 'teacher',</td>
+</tr>
+</tbody>
+</table>
+<p>'time': '08:00:00', 'time_length': 120, 'price': 2468.0},</p>
+<p>'teacher_info': {'error': 0, 'list':</p>
+<p>[{'id': 1, 'name': 'teacher', 'tel': '15803331570'},</p>
+<p>{'id': 2, 'name': 'testteacher0', 'tel': '15803331571'}]},</p>
+<p>'section_info': {'error': 0, 'list':</p>
+<p>[{'id': 1, 'course_id_id': 1, 'count': 1, 'name': 'course&lt;1&gt;',</p>
+<p>'date': '2018-07-04', 'start_time': '08:00:00', 'end_time': '10:00:00',</p>
+<p>'location': 'classIn102', 'is_cancel': False},</p>
+<p>{'id': 2, 'course_id_id': 1, 'count': 2, 'name': 'course&lt;2&gt;',</p>
+<p>'date': '2018-07-11', 'start_time': '08:00:00', 'end_time': '10:00:00',</p>
+<p>'location': 'classIn102', 'is_cancel': False}]}}</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.views.get_teacher_info">
+<code class="descclassname">courses.views.</code><code class="descname">get_teacher_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.get_teacher_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于获取所有老师信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error标识和老师信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例(老师信息存在):</th><td class="field-body">{'error': 0, 'list': [{'id': 1, 'name': 'teacher',</td>
+</tr>
+</tbody>
+</table>
+<p>'tel': '15803331570'}, {'id': 2, 'name': 'testteacher0',</p>
+<p>'tel': '15803331571'}, {'id': 3, 'name': 'testteacher1',</p>
+<p>'tel': '15803331572'}, {'id': 4, 'name': 'testteacher2',</p>
+<p>'tel': '15803331573'}]}}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回样例(老师信息不存在):</th><td class="field-body">{'error': 1}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.views.get_unsection_info">
+<code class="descclassname">courses.views.</code><code class="descname">get_unsection_info</code><span class="sig-paren">(</span><em>course</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.get_unsection_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于获取某门课程未销课的课节信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error标识和老师信息</td>
+</tr>
+<tr class="field-even field"><th class="field-name">接收参数:</th><td class="field-body">Courses实例对象</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body">字典</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例(课节信息存在):</th><td class="field-body">{'error': 0, 'list': [{'id': 1, 'course_id_id': 1,</td>
+</tr>
+</tbody>
+</table>
+<p>'count': 1, 'name': 'course&lt;1&gt;', 'date': '2018-07-04',</p>
+<p>'start_time': '08:00:00', 'end_time': '10:00:00', 'location': 'classIn102',</p>
+<p>'is_cancel': False}, {'id': 2, 'course_id_id': 1, 'count': 2, 'name':</p>
+<p>'course&lt;2&gt;', 'date': '2018-07-11', 'start_time': '08:00:00', 'end_time':</p>
+<p>'10:00:00', 'location': 'classIn102', 'is_cancel': False}, {'id': 3,</p>
+<p>'course_id_id': 1, 'count': 3, 'name': 'course&lt;3&gt;', 'date': '2018-07-18',</p>
+<p>'start_time': '08:00:00', 'end_time': '10:00:00', 'location': 'classIn102',</p>
+<p>'is_cancel': False}]}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回样例(课节信息不存在):</th><td class="field-body">{'error': 1, 'list': []}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="courses.views.init_sections">
+<code class="descclassname">courses.views.</code><code class="descname">init_sections</code><span class="sig-paren">(</span><em>course</em>, <em>start_date</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.views.init_sections" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于初始化课节信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">接收参数:</th><td class="field-body">Courses实例对象, start_date(课程开课日期%Y-%m-%s)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-courses">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-courses" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, group1.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'zh',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+stages:
+  - backend
+  - frontend
+
+cache:
+  untracked: true
+  paths:
+    - venv/
+    - server/front/node_modules
+    - server/front/dist
+
+backendLint:
+  stage: backend
+  image: python:latest
+
+  tags:
+    - test
+  
+  before_script:
+    - pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple
+    - virtualenv venv
+    - source venv/bin/activate
+
+  script:
+    - echo 'Running pylint . . .'
+    - pip install -r server/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+    - cd server
+    - pylint --load-plugins pylint_django --disable=C,R,E1101 api
+    - pylint --load-plugins pylint_django --disable=C courses
+    - pylint --load-plugins pylint_django --disable=C customers
+    - pylint --load-plugins pylint_django --disable=C,W0613 datas
+    - pylint --load-plugins pylint_django --disable=C,W0613 users
+
+backendTest:
+  stage: backend
+  image: python:latest
+  services:
+    - mysql:5.7
+  variables:
+    MYSQL_DATABASE: system
+    MYSQL_ROOT_PASSWORD: vagrant
+  
+  tags:
+    - test
+
+  before_script:
+    - pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple
+    - virtualenv venv
+    - source venv/bin/activate
+  
+  script:
+    - echo 'Running django test'
+    - pip install -r server/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+    - cd server
+    - find . -type f -name '*37.pyc' | xargs rm
+    - find . -type f -name '000*' | xargs rm
+    - python manage.py makemigrations
+    - python manage.py migrate
+    - coverage run --source=. manage.py test
+    - coverage report
+
+frontendLint:
+  stage: frontend
+  image: node:latest
+  tags:
+    - test
+  script:
+    - echo 'Running npm run lint'
+    - cd server/front/
+    - npm install -g cnpm --registry=https://registry.npm.taobao.org
+    - cnpm install
+    - npm run lint

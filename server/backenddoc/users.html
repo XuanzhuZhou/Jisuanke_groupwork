@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>users package &mdash; group1 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> group1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">users package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-users.admin">users.admin module</a></li>
+<li><a class="reference internal" href="#module-users.models">users.models module</a></li>
+<li><a class="reference internal" href="#module-users.tests">users.tests module</a></li>
+<li><a class="reference internal" href="#module-users.urls">users.urls module</a></li>
+<li><a class="reference internal" href="#module-users.views">users.views module</a></li>
+<li><a class="reference internal" href="#module-users">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">group1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>users package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/users.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="users-package">
+<h1>users package<a class="headerlink" href="#users-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-users.admin">
+<span id="users-admin-module"></span><h2>users.admin module<a class="headerlink" href="#module-users.admin" title="永久链接至标题">¶</a></h2>
+<p>本文件用于建立后台注册模型</p>
+</div>
+<div class="section" id="module-users.models">
+<span id="users-models-module"></span><h2>users.models module<a class="headerlink" href="#module-users.models" title="永久链接至标题">¶</a></h2>
+<p>本文件用于建立user数据库模型</p>
+<dl class="class">
+<dt id="users.models.SellerInfo">
+<em class="property">class </em><code class="descclassname">users.models.</code><code class="descname">SellerInfo</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#users.models.SellerInfo" title="永久链接至目标">¶</a></dt>
+<dd><p>地推人员信息类</p>
+<p>:字段解释：</p>
+<ul class="simple">
+<li>seller: 地推人员外键 User</li>
+<li>city: 城市 CharFiled</li>
+<li>price: 注册价格 FloatField</li>
+</ul>
+<dl class="exception">
+<dt id="users.models.SellerInfo.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#users.models.SellerInfo.DoesNotExist" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="users.models.SellerInfo.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#users.models.SellerInfo.MultipleObjectsReturned" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="users.models.User">
+<em class="property">class </em><code class="descclassname">users.models.</code><code class="descname">User</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#users.models.User" title="永久链接至目标">¶</a></dt>
+<dd><p>自定义用户类</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">类继承:</th><td class="field-body">自 django.contrib.auth.models.AbstractUser</td>
+</tr>
+<tr class="field-even field"><th class="field-name">字段信息:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>USER_TYPE_CHOICES: 身份选择项 详情见statuscode.py</li>
+<li>GENDER_CHOICES: 性别选择项 'male': 男 'female' : 女</li>
+<li>username: 用户名  自django</li>
+<li>password: 密码    自django</li>
+<li>user_type: 该用户对象的身份  PositiveSmallInteferField</li>
+<li>gender: 该用户性别 CharField</li>
+</ul>
+<dl class="exception">
+<dt id="users.models.User.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#users.models.User.DoesNotExist" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="users.models.User.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#users.models.User.MultipleObjectsReturned" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="users.models.get_or_create_default_seller">
+<code class="descclassname">users.models.</code><code class="descname">get_or_create_default_seller</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.models.get_or_create_default_seller" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于获取或创建默认的地推人员，该地推的价格为所有地推中的最高价</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">QueryDict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.models.modify_user_info">
+<code class="descclassname">users.models.</code><code class="descname">modify_user_info</code><span class="sig-paren">(</span><em>username</em>, <em>form</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#users.models.modify_user_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于修改用户信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">接受信息:</th><td class="field-body">username(用户名) form(修改信息字典)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body">Success code 0</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.models.search_user_info">
+<code class="descclassname">users.models.</code><code class="descname">search_user_info</code><span class="sig-paren">(</span><em>username</em>, <em>user_type</em><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#users.models.search_user_info" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于搜索用户信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">接受数据： username:</th><td class="field-body">用户名  user_type: 用户类型(参照statuscode USER_TYPE)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回数据:</th><td class="field-body">list[dist]</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回字典键值:</th><td class="field-body">id , password, last_login, is_superuser, username,</td>
+</tr>
+</tbody>
+</table>
+<p>first_name, last_name, email, is_staff, is_active, date_joined,</p>
+<p>user_type, gender</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-users.tests">
+<span id="users-tests-module"></span><h2>users.tests module<a class="headerlink" href="#module-users.tests" title="永久链接至标题">¶</a></h2>
+<p>本文件用于测试</p>
+<dl class="class">
+<dt id="users.tests.SellerviewsTestCase">
+<em class="property">class </em><code class="descclassname">users.tests.</code><code class="descname">SellerviewsTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SellerviewsTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>地推人员视图测试</p>
+<dl class="method">
+<dt id="users.tests.SellerviewsTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SellerviewsTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>初始化数据</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="users.tests.SellerviewsTestCase.test_identity_error">
+<code class="descname">test_identity_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SellerviewsTestCase.test_identity_error" title="永久链接至目标">¶</a></dt>
+<dd><p>测试生成二维码时输入人员的身份不正确时返回Identity Error code</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="users.tests.SellerviewsTestCase.test_qrcode">
+<code class="descname">test_qrcode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SellerviewsTestCase.test_qrcode" title="永久链接至目标">¶</a></dt>
+<dd><p>测试二维码生成和获得返回功能</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="users.tests.SuperuserArrCCTestCase">
+<em class="property">class </em><code class="descclassname">users.tests.</code><code class="descname">SuperuserArrCCTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserArrCCTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试超级管理员给学员安排课程顾问</p>
+<dl class="method">
+<dt id="users.tests.SuperuserArrCCTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserArrCCTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="users.tests.SuperuserArrCCTestCase.test_arr_cc">
+<code class="descname">test_arr_cc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserArrCCTestCase.test_arr_cc" title="永久链接至目标">¶</a></dt>
+<dd><p>测试分配课程顾问</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="users.tests.SuperuserArrCCTestCase.test_get_ccinfo">
+<code class="descname">test_get_ccinfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserArrCCTestCase.test_get_ccinfo" title="永久链接至目标">¶</a></dt>
+<dd><p>测试返回课程顾问信息</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="users.tests.SuperuserArrCCTestCase.test_get_without_cc">
+<code class="descname">test_get_without_cc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserArrCCTestCase.test_get_without_cc" title="永久链接至目标">¶</a></dt>
+<dd><p>测试返回学生信息</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="users.tests.SuperuserViewLogTestCase">
+<em class="property">class </em><code class="descclassname">users.tests.</code><code class="descname">SuperuserViewLogTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserViewLogTestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>本类用于测试超级管理员查看日志</p>
+<dl class="method">
+<dt id="users.tests.SuperuserViewLogTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserViewLogTestCase.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="users.tests.SuperuserViewLogTestCase.test_view_log">
+<code class="descname">test_view_log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserViewLogTestCase.test_view_log" title="永久链接至目标">¶</a></dt>
+<dd><p>测试日期内有日志的情况</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="users.tests.SuperuserViewLogTestCase.test_view_nolog">
+<code class="descname">test_view_nolog</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#users.tests.SuperuserViewLogTestCase.test_view_nolog" title="永久链接至目标">¶</a></dt>
+<dd><p>测试日期内没有日志的情况</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-users.urls">
+<span id="users-urls-module"></span><h2>users.urls module<a class="headerlink" href="#module-users.urls" title="永久链接至标题">¶</a></h2>
+<p>本文件用于配置'user/'下的 url</p>
+</div>
+<div class="section" id="module-users.views">
+<span id="users-views-module"></span><h2>users.views module<a class="headerlink" href="#module-users.views" title="永久链接至标题">¶</a></h2>
+<p>这个模块是接受 GET 和 POST 请求的样例。
+可以用来给前端提供后台测试接口。</p>
+<dl class="function">
+<dt id="users.views.create_timedelta">
+<code class="descclassname">users.views.</code><code class="descname">create_timedelta</code><span class="sig-paren">(</span><em>start</em>, <em>end</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.create_timedelta" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来返回时间差</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.views.generate_qrcode">
+<code class="descclassname">users.views.</code><code class="descname">generate_qrcode</code><span class="sig-paren">(</span><em>info</em>, <em>home</em>, <em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.generate_qrcode" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于生成二维码</p>
+<p>:接受数据：info(seller info 赋给index) home(根网址) path(保存路径)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body">无</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.views.get_qrcode">
+<code class="descclassname">users.views.</code><code class="descname">get_qrcode</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.get_qrcode" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于处理获得二维码请求返回二维码路径</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">前端发送数据:</th><td class="field-body">登录后的请求数据</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Url:</th><td class="field-body">user/qrcode</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">Success 或 Identity Error 状态码</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例1(成功):</th><td class="field-body">{'msg': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例2(身份错误):</th><td class="field-body">{'msg': 901}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.views.superuser_arrange_cc">
+<code class="descclassname">users.views.</code><code class="descname">superuser_arrange_cc</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.superuser_arrange_cc" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于前端发送请求和数据分配课程顾问</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">前端发送数据:</th><td class="field-body">{'customer_id': '家长的id', 'cc_id': 'cc的id'}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Url:</th><td class="field-body">user/superuser_arrange_cc</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">error标识</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body">Json字典</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例1(成功):</th><td class="field-body">{'error': 0}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例2(用户未找到):</th><td class="field-body">{'error': 1}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.views.superuser_get_cc">
+<code class="descclassname">users.views.</code><code class="descname">superuser_get_cc</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.superuser_get_cc" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于前端发送请求获取课程顾问信息和资源数</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body"><p class="first">user/superuser_get_cc</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first">error标识和课程顾问信息</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body"><p class="first">Json字典</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例1(成功):</th><td class="field-body"><p class="first">{'error': 0, 'list': [{'id': 2, 'username': 'cc0', 'gender':</p>
+<p>'female', 'count': 1},{'id': 3, 'username': 'cc1', 'gender':</p>
+<p>'female', 'count': 0},{'id': 4, 'username': 'cc2', 'gender':</p>
+<p>'female', 'count': 0}]}</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例2(无结果):</th><td class="field-body"><p class="first last">{'error': 1}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.views.superuser_view_newstu">
+<code class="descclassname">users.views.</code><code class="descname">superuser_view_newstu</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.superuser_view_newstu" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用于前端发送请求获取待分配课程顾问的学生及家长信息</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body"><p class="first">user/superuser_view_newstu</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first">error标识和学生及家长信息</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回值:</th><td class="field-body"><p class="first">Json字典</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例1(成功):</th><td class="field-body"><p class="first">{'error': 0, 'list': [{'id': 1, 'child_name': 'child1',</p>
+<p>'parent_name': None, 'demand': None,</p>
+<p>'tel': '13812349874'}]}</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例2(无结果):</th><td class="field-body"><p class="first last">{'error': 1}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.views.superuser_viewlog">
+<code class="descclassname">users.views.</code><code class="descname">superuser_viewlog</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.superuser_viewlog" title="永久链接至目标">¶</a></dt>
+<dd><p>本函数用来响应前端请求查看日志</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Url:</th><td class="field-body"><p class="first">user/superuser_viewlog</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">前端发送数据:</th><td class="field-body"><p class="first">{'start': '起始日期', 'end': '结束日期'}</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"><p class="first">error标识和日志信息</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回值:</th><td class="field-body"><p class="first">Json字典</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回样例1(成功):</th><td class="field-body"><p class="first">{'error': 0, 'list': [{'id': 1, 'type': 1,</p>
+<p>'username': 'person1', 'date': '2018-08-21',</p>
+<p>'info': 'superuser删除了员工person1',</p>
+<p>'operator': 'superuser'}]}</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回样例2(无结果):</th><td class="field-body"><p class="first last">{'error': 1}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-users">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-users" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, group1.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'zh',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

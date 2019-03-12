@@ -1,0 +1,10 @@
+[run]
+omit =
+    initdatabase.py
+	initdata.py
+	example/*
+	manage.py
+	/home/*
+	*/apps.py
+	backenddoc/*
+	

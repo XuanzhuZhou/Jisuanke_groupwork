@@ -1,0 +1,77 @@
+{
+    "STATUS_CODE": {
+        "Success": 0,
+        "Not Found": 1,
+    
+        "Identity Error": 901,
+        "User Not Found": 902,
+        "Course Not Found": 903,
+        "Customer Not Found": 904,
+        "Customer Already Exists": 905,
+        "Child Not Found": 907,
+        "Old Not Found": 908,
+        "User Already Exists": 909,
+        "Course Already Exists": 910,
+        "Teacher Not Found": 911,
+    
+        "Refund Record Exception": 801,
+        "Trade Record Exception": 802,
+        "Alipay Error": 803,
+        "Price Not Match": 804,
+        "Course Not Paid": 805,
+    
+        "Database Error": 700,
+        "Error File Type": 701,
+        "Unable To Import File": 702,
+        "File Data Error": 703,
+        "Path Not Found": 704,
+        "Frontend Value Error": 705,
+        "Error Time Range": 706,
+        "Verify Code Error": 707,
+        "Error Tel Number": 708,
+        "Password Not Match": 709
+    },
+    "USER_TYPE": {
+        "admin": 0,
+        "customer": 1,
+        "superuser": 2,
+        "consultant": 3,
+        "eduadmin": 4,
+        "seller": 5
+    },
+    "DATE_CODE": {
+        "Monday": 1,
+        "Tuesday": 2,
+        "Wednesday": 3,
+        "Thursday": 4,
+        "Friday": 5,
+        "Saturday": 6,
+        "Sunday": 7
+    },
+    "DATE_DECODE" : {
+        "1": "星期一",
+        "2": "星期二",
+        "3": "星期三",
+        "4": "星期四",
+        "5": "星期五",
+        "6": "星期六",
+        "7": "星期日"
+    },
+    "REFUND_STATUS": {
+        "No Refund Received": 0,
+        "Under Review": 1,
+        "Audit Passed": 2,
+        "Already Paid": 3
+    },
+    "LOG_TYPE" : {
+        "Refund": 0,
+        "Delete User": 1,
+        "Delete Customer": 2,
+        "Add User": 3
+    },
+    "TRADE_TYPE" : {
+        "wap_pay": 81,
+        "page_pay": 82,
+        "refund": 80
+    }
+}
